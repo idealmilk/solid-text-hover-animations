@@ -1,10 +1,8 @@
-# React Ticker
+# Solid Text Hover Animations
 
-[![NPM](https://img.shields.io/npm/v/solid-text-hover-animations.svg)](https://www.npmjs.com/package/solid-text-hover-animations) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/solid-text-hover-animations.svg)](https://www.npmjs.com/package/solid-text-hover-animations) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
 
-**React Ticker** is a lightweight, performant React component, that moves text, images and videos infinitely like a newsticker.
-
-It can be used to replace the deprecated `marquee`-HTML-tag.
+**Solid Text Hover Animations** is a lightweight and easy-to-use SolidJS component that creates text animations on hover.
 
 <!-- **[Check out the Demo!](https://andreasfaust.github.io/solid-text-hover-animations/)** -->
 
