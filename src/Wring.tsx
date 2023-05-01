@@ -12,9 +12,11 @@ const Wring: Component<{ text: string }> = (props) => {
       setTimeout(() => {
         setIsLeaving(false);
         setFlipDelay(0);
-      }, text.length * 25);
+      }, text.length * 35);
     }
   });
+
+  const characters = text().split('');
 
   return (
     <div
@@ -23,8 +25,9 @@ const Wring: Component<{ text: string }> = (props) => {
         setIsLeaving(true);
         setIsHovered(false);
       }}
+      style={{ 'font-size': 'inherit', display: 'inline' }}
     >
-      <For each={text().split('')}>
+      <For each={characters}>
         {(char, i) => (
           <span
             style={{
@@ -33,11 +36,11 @@ const Wring: Component<{ text: string }> = (props) => {
               transition: `transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) ${
                 isHovered()
                   ? i() * 50
-                  : flipDelay() + (text.length - 1 - i()) * 50
+                  : flipDelay() + (text.length - 1 - i()) * 25
               }ms`,
             }}
           >
-            {char}
+            {char === ' ' ? '\u00A0' : char}
           </span>
         )}
       </For>

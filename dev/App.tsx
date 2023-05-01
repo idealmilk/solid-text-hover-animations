@@ -17,9 +17,8 @@ const App: Component = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          Learn Solid
+          <HoverAnimation text='LEARN SOLID WITH ME' />
         </a>
-        <HoverAnimation text='ABOUT' />
       </header>
     </div>
   );
