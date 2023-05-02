@@ -1,5 +1,11 @@
 # solid-text-hover-animations
 
+## 0.1.0
+
+### Minor Changes
+
+- be56ad4: Add the rotate mode, add stagger boolean to both modes
+
 ## 0.0.3
 
 ### Patch Changes
