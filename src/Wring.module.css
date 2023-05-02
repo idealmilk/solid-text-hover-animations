@@ -1,0 +1,8 @@
+.wringContainer {
+  position: relative;
+  font-size: inherit;
+}
+
+.wringContainer span {
+  display: inline-block;
+}

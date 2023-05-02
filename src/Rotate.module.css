@@ -1,15 +1,12 @@
-.wringContainer {
+.rotateContainer {
   position: relative;
   font-size: inherit;
 }
 
 .original,
 .clone {
-  display: block;
-}
-
-.original {
   position: relative;
+  display: block;
 }
 
 .clone {
@@ -18,7 +15,8 @@
   bottom: 0;
 }
 
-span {
+.original span,
+.clone span {
   display: inline-block;
   will-change: transform;
   transform-style: preserve-3d;

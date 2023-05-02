@@ -1,5 +1,7 @@
 import { Component, For, createEffect, createSignal } from 'solid-js';
 
+import styles from './Wring.module.css';
+
 const Wring: Component<{ text: string }> = (props) => {
   const [text, setText] = createSignal(props.text);
   const [isHovered, setIsHovered] = createSignal(false);
@@ -25,13 +27,12 @@ const Wring: Component<{ text: string }> = (props) => {
         setIsLeaving(true);
         setIsHovered(false);
       }}
-      style={{ 'font-size': 'inherit', display: 'inline' }}
+      class={styles.wringContainer}
     >
       <For each={characters}>
         {(char, i) => (
           <span
             style={{
-              display: 'inline-block',
               'transform-style': 'preserve-3d',
               transform: isHovered() ? 'rotateX(360deg)' : '',
               transition: `transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) ${

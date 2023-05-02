@@ -27,9 +27,9 @@ const Rotate: Component<{ text: string }> = (props) => {
         setIsLeaving(true);
         setIsHovered(false);
       }}
-      class={styles.wringContainer}
+      class={styles.rotateContainer}
     >
-      <div>
+      <div class={styles.original}>
         <For each={characters}>
           {(char, i) => (
             <span
