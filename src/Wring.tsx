@@ -32,6 +32,7 @@ const Wring: Component<{ text: string }> = (props) => {
           <span
             style={{
               display: 'inline-block',
+              'transform-style': 'preserve-3d',
               transform: isHovered() ? 'rotateX(360deg)' : '',
               transition: `transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) ${
                 isHovered()

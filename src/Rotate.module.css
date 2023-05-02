@@ -1,0 +1,30 @@
+.wringContainer {
+  position: relative;
+  font-size: inherit;
+}
+
+.original,
+.clone {
+  display: block;
+}
+
+.original {
+  position: relative;
+}
+
+.clone {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+span {
+  display: inline-block;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+}
+
+.clone span {
+  transform-origin: top;
+}
