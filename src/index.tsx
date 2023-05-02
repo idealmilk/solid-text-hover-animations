@@ -3,18 +3,18 @@ import Rotate from './Rotate';
 
 interface HoverAnimationProps {
   text: string;
-  effect?: string;
+  mode?: string;
   stagger?: boolean;
 }
 
 const HoverAnimation = ({
   text,
-  effect = 'wring',
+  mode = 'wring',
   stagger = true,
 }: HoverAnimationProps) => {
-  if (effect === 'wring') {
-    return <Wring text={text} />;
-  } else if (effect === 'rotate') {
+  if (mode === 'wring') {
+    return <Wring text={text} stagger={stagger} />;
+  } else if (mode === 'rotate') {
     return <Rotate text={text} stagger={stagger} />;
   }
 };

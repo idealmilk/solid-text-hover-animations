@@ -17,11 +17,7 @@ const App: Component = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <HoverAnimation
-            text='LEARN SOLID WITH ME'
-            effect='rotate'
-            stagger={true}
-          />
+          <HoverAnimation text='LEARN SOLID WITH ME' mode='wring' />
         </a>
       </header>
     </div>
